@@ -1,0 +1,27 @@
+header#top
+  nav
+    .content-wrapper
+      .logo
+        img.imagotipo(src='imgs/imagotipo.png')
+        img(src='imgs/onex-logo.svg')
+      .navigation-menu-wrapper
+        ul.main-nav
+          li: a.smooth-scroll(href="#about") About Us
+          li: a(href="#") Services
+          li: a(href="#") Incentive Travel
+          li: a(href="#") Meetings & Events
+            span.menu-btn-bar
+          li: a(href="#") Contact Us
+  .content-wrapper.hero
+    div.hero-content-wrapper
+      h1 Expertos en los principales destinos de México
+      a.btn.hero-btn(href='#about') Read more
+      a.btn.hero-btn.show-video(href='#') Watch Video
+  
+.video-modal
+  .video-container
+    i.fa.fa-times-circle(aria-hidden="true")
+    iframe#player(src="https://www.youtube.com/embed/_8VnSExr9vA" frameborder="0" allowfullscreen)
+    //- video(poster="assets/video-poster.jpg")
+    //-   source(src="assets/onex.mp4" type="video/mp4")
+    //-   |Your browser doesn't support HTML5 video tag.

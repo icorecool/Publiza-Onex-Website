@@ -1,0 +1,46 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Onex - Dev ver-0.0.3
+		link(rel="stylesheet" href="css/ladda-themeless.min.css")
+		link(rel="stylesheet" href="css/style.css")
+		script(src="https://use.fontawesome.com/1e8ec4bcaf.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+
+	body
+		header
+			ul.colorStripe
+				li: span.color
+				li: span.color
+				li: span.color
+				li: span.color
+				li: span.color
+				li: span.color
+
+			.hero
+				img(src="imgs/logoOnex.png", alt="")
+
+				p Si quieres saber mas...
+				form(name="suscribir", method="post", id="formaDeSuscripccion")
+					div.inputs
+						input(class="emailInput" type="text" name="e-mail" placeholder="Dejanos tu correo electrónico")
+					div.actions
+						button(type="submit" class="mailSubmit ladda-button" data-style="slide-up"): span(class="ladda-label"): i(class='fa fa-paper-plane')
+					div.loader
+						//- img(src="imgs/ajax.gif" class="ajaxgif hide")
+						.msg: p						
+			
+			ul.colorStripe
+				li: span.color
+				li: span.color
+				li: span.color
+				li: span.color
+				li: span.color
+				li: span.color
+	
+		footer
+	script(src="js/spin.min.js")
+	script(src="js/ladda.min.js")
+	script(src="js/mailValidator.js")

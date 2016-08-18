@@ -1,0 +1,161 @@
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body
+	position: relative
+	font-family: $main
+	font-size: 16px
+	height: 100%
+	background-color: $black
+	background: url(../imgs/bkgd.jpg)
+	display: flex
+	align-items: center
+
+//
+header
+	background-color: rgba(0,0,0,1)
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-around
+	margin-top: 15%
+	padding: 20px 0
+
+	.colorStripe
+		width: 10px
+		height: auto
+		list-style: none
+		li
+			width: 100%
+			height: 66px
+			background-color: $white
+		li:nth-child(1)
+			background-color: $redDark
+		li:nth-child(2)
+			background-color: $blueDark
+		li:nth-child(3)
+			background-color: $redLight
+		li:nth-child(4)
+			background-color: $orange
+		li:nth-child(5)
+			background-color: $green
+		li:nth-child(6)
+			background-color: $blueLight
+
+	.hero
+		width: 520px
+		margin: 0 auto
+		text-align: center
+		// display: flex
+		// flex-direction: column
+		// justify-content: center
+		// align-items: left
+		h1,h3
+			color: #FFF
+			margin-bottom: 20px
+			text-align: left
+			font-weight: 900
+		img
+			flex-grow: 1
+			width: 400px
+		p
+			margin: 0 auto
+			color: $pColor
+			font-size: 1.1em
+			line-height: 1.5em
+			text-align: left
+			margin-bottom: 10px
+			font-weight: 400
+			text-align: justify
+		h3
+			margin-bottom: 5px
+		form
+			display: flex
+			margin: 0 auto
+			background-color: $blueDark
+			width: 100%
+			position: relative
+			label
+				color: $white
+				top: 0
+				left: 0
+				z-index: 15
+			.actions,
+			.inputs
+				display: block
+				height: 50px
+				width: 20%
+				position: relative
+			.inputs
+				width: 80%
+				input
+					width: 100%
+					height: 100%
+					background-color: transparent
+					padding: 0 1em
+					color: $white
+					font-size: 1.1em
+					border: none
+					&:focus, &:active
+						outline: none
+						border: none
+					+placeholder
+						color: $white
+						font-weight: 300
+				span.error
+					position: absolute
+					top: 52px
+					left: 0
+					color: $redDark
+			.actions
+				button
+					width: 100%
+					z-index: 10
+					background-color: $blueLight
+					border: none
+					right: 0
+					top: 0
+					height: 50px
+					transition: all 0.3s ease-in-out
+					z-index: 10
+					&:hover
+						background-color: $green
+						i
+							font-size: 1.8em
+
+					i
+						color: white
+						font-size: 1.5em
+						transition: all 0.3s ease-in-out
+			.loader
+				position: absolute
+				top: 0
+				right: 0
+				height: 50px
+				width: 0%
+				background-color: transparent
+				transition: all 0.3s ease-in-out
+				z-index: 20
+				img
+					display: none
+					text-align: center
+				.msg
+					width: 100%
+					height: 100%
+					// background-color: transparent
+					display: flex
+					align-items: center
+					justify-content: center
+					color: white
+					p
+						margin: 0
+				.msg_success
+					background-color: $green
+				.msg_error
+					background-color: $redLight
+			.loaderShow
+				width: 20%
+			.loaderComplete
+				width: 100%

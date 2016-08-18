@@ -1,0 +1,188 @@
+//
+// 1.0 - Basic
+//
+// - algo
+// - algo
+// - algo
+//
+
+/*
+	*
+	* 1.0 - Basic
+	*/
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+html
+	background-color: $black
+
+body
+	background-color: #000
+	color: $text-base
+	font:
+		family: $main
+		size: 16px
+		weight: normal
+	overflow-y: hidden
+	@include respond-to(sm)
+		font-size: 15px
+	@include respond-to(xs)
+		font-size: 14px
+
+/* a */
+a
+	color: $link
+	font:
+		family: $main
+		weight: 400
+	text-decoration: none
+	+transition(all 0.3s ease-in-out)
+	&:hover
+		color: $link-hover
+		text-decoration: none
+		+transition(all 0.3s ease-in-out)
+
+/* img */
+img
+	+transition(all 0.5s ease-in)
+
+/* UTILITY */
+/* position : relative */
+body,
+header,
+nav,
+.wrap
+	position: relative
+/* h1 - h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+	font:
+		family: $main
+		weight: 400
+	line-height: 110%
+	margin: 0
+	padding: 0
+h1,
+.h1
+	font-size: 4.2rem
+h2,
+.h2
+	font-size: 3.56rem
+h3,
+.h3
+	font-size: 2.92rem
+h4,
+.h4
+	font-size: 2.28rem
+h5,
+.h5
+	font-size: 1.64rem
+h6,
+.h6
+	font-size: 1rem
+
+/* p */
+p
+	margin-bottom: 0
+/* margin */
+.margin-0
+	margin: 0
+/* padding */
+.padding-0
+	padding: 0
+/* hr */
+hr
+	border: none
+	margin: 0
+// Main
+/* Main */
+// .wrap
+// 	background-color: #EEE
+/* section */
+.section
+	padding: 160px 0
+	text-align: center
+	width: 100%
+
+.content-wrapper
+	margin: 0 auto
+	max-width: 1280px
+	width: 90%
+	// @include respond-to(lg)
+		// background-color: red
+		// width: 70%
+	@include respond-to(md)
+		// background-color: blue
+		width: 85%
+	@include respond-to(sm)
+		// background-color: yellow
+		// width: 90%
+		width: 750px
+	@include respond-to(xs)
+		// background-color: green
+		width: 100%
+
+.force-scroll
+	height: 3000px
+
+li.disabled a
+	color: darken($link, 60%) !important
+	cursor: default
+
+.btn
+	border: 1px solid $white
+	padding: 10px 25px
+	display: block
+	&:hover
+		background-color: $blueLight
+
+
+.colorStripe
+	//position: absolute
+	width: 7px
+	height: auto
+	list-style: none
+	margin-top: 30px
+	li
+		width: 100%
+		height: 20px
+		background-color: $white
+	li:nth-child(1)
+		background-color: $redDark
+	li:nth-child(2)
+		background-color: $blueDark
+	li:nth-child(3)
+		background-color: $redLight
+	li:nth-child(4)
+		background-color: $orange
+	li:nth-child(5)
+		background-color: $green
+	li:nth-child(6)
+		background-color: $blueLight
+
+
+.back-to-top a
+	position: fixed
+	bottom: 4%
+	right: 2.5%
+	padding: 8px 14px
+	z-index: 1
+	color: $white
+	border: 2px solid $white
+	font-size: 24px
+	line-height: 1
+	&:hover
+		background-color: $blueLight
