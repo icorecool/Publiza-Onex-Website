@@ -26,7 +26,7 @@ body
 		family: $main
 		size: 16px
 		weight: normal
-	overflow-y: hidden
+	// overflow-y: hidden
 	@include respond-to(sm)
 		font-size: 15px
 	@include respond-to(xs)
@@ -135,6 +135,15 @@ hr
 		// background-color: green
 		width: 100%
 
+.side,
+.side-col
+	margin: 0 auto
+	width: 66%
+		@include respond-to(sm)
+			width: 80%
+		@include respond-to(xs)
+			width: 90%
+
 .force-scroll
 	height: 3000px
 
@@ -149,7 +158,9 @@ li.disabled a
 	&:hover
 		background-color: $blueLight
 
-
+.text-center
+	text-align: center
+	
 .colorStripe
 	//position: absolute
 	width: 7px
