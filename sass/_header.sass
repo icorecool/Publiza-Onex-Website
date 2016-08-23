@@ -3,11 +3,12 @@ header-second
   position: relative
   z-index: 10
   //Esta propiedad cambaira una vez implementado el sitio completo
-  height: calc(100vh)
+  height: 100vh
   background-color: $black
   background-image: url('../imgs/onex-corporate-travel.jpg')
   background-position: center center
   background-size: cover
+  position: relative
   // nav
   //   width: 100%
   //   position: relative
@@ -33,7 +34,7 @@ header-second
   //         width: auto
   //       .imagotipo
   //         margin-right: 20px
-  //         transform: scale(1.5)d
+  //         transform: scale(1.5)
   //     .navigation-menu-wrapper
   //       height: 100%
   //       position: relative
@@ -80,7 +81,7 @@ header-second
     align-items: left
     justify-content: center
     flex-flow: column
-    margin-top: -85px
+    // margin-top: -85px
     @include respond-to(sm)
       text-align: center
     @include respond-to(xs)
@@ -176,115 +177,213 @@ header-second
 /**************************************/
 .center-contents
   // background-color: yellow
-  max-width: 1280px
-  margin: 0 auto
   overflow: hidden
   width: 100%
   display: flex
-  justify-content: space-between
-  height: 60px
-  @include respond-to(sm)
-    flex-wrap: wrap
-  @include respond-to(xs)
-    flex-wrap: wrap
-  div
-    // background-color: red
-    width: 30%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  +transition(height 300ms ease-in-out)
+  .center-contents-wrap
     display: flex
-    justify-content: flex-start
-    align-items: center
-    @include respond-to(sm)
-      width: 100%
-    @include respond-to(xs)
-      width: 100%
-    .logo,
-    .toggle-nav
-      @include respond-to(sm)
-        width: 80px
-      @include respond-to(xs)
-        width: 80px
-    .logo
-      // background-color: yellow
-      // max-width: 60px
-      @include respond-to(sm)
-        width: calc(100% - 80px)
-      @include respond-to(xs)
-        width: calc(100% - 80px)
-      img
-        display: inline-block
-        height: 45px
-        margin-right: 18px
-    .toggle-nav
-      // background-color: pink
-      @include respond-to(lg)
-        display: none
-      @include respond-to(md)
-        display: none
-      @include respond-to(sm)
-        display: block
-      @include respond-to(xs)
-        display: block
-  .page-nav
-    // background-color: green
-    color: #fff
+    justify-content: space-between
+    max-width: 1280px
+    width: 100%
+    margin: 0 auto
+    height: 85px
     position: relative
-    width: 70%
     @include respond-to(sm)
-      width: 100%
+      flex-wrap: wrap
     @include respond-to(xs)
-      width: 100%
-    // position: relative
-    // visibility: inherit
-    // transition:visibility .4s linear
-    ul
-      align-items: center
+      flex-wrap: wrap
+    .page-logo
+      // background-color: red
+      width: 30%
       display: flex
-      justify-content: flex-end
-      height: 100%
+      justify-content: flex-start
+      align-items: center
+      position: relative
+      height: 85px
+      @include respond-to(lg)
+        padding-left: 3%
+      @include respond-to(md)
+        padding-left: 3%
       @include respond-to(sm)
-        flex-wrap: wrap
+        padding: 0 3%
+        width: 100%
       @include respond-to(xs)
-        flex-wrap: wrap
-      li
-        list-style: none
-        margin: 0
-        padding: 0
+        padding: 0 3%
+        width: 100%
+      .logo,
+      .toggle-nav
         @include respond-to(sm)
-          // background-color: teal
-          width: 100%
+          width: 50px
         @include respond-to(xs)
-          // background-color: maroon
-          width: 100%
-        a
-          // background-color: blue
-          color: #fff
-          width: 100%
-          height: 100%
-          display: block
-          padding: 0.75em 1em
-          text-decoration: none
-          cursor: pointer
-          // line-height: 2
-          &:hover
-            // background-color: teal
-          @include respond-to(sm)
-            border-top: #666 1px solid
+          width: 50px
+      .logo
+        // background-color: purple
+        // max-width: 60px
+        @include respond-to(sm)
+          width: calc(100% - 50px)
+        @include respond-to(xs)
+          width: calc(100% - 50px)
+        img
+          display: inline-block
+          height: 35px
+          vertical-align: middle
           @include respond-to(xs)
-            border-top: #666 1px solid
-
+            height: 25px
+          &.imagotipo
+            transform: scale(1.5)
+            margin-right: 18px
+            @include respond-to(xs)
+              margin-left: 8px
+      .toggle-nav
+        // background-color: pink
+        cursor: pointer
+        height: 40px
+        position: relative
+        @include respond-to(lg)
+          display: none
+        @include respond-to(md)
+          display: none
+        @include respond-to(sm)
+          display: block
+        @include respond-to(xs)
+          display: block
+        .linea1
+          background: #fff
+          height: 2px
+          width: 15px
+          position: absolute
+          left: 50%
+          margin-left: -7px
+          top: 15px
+          transition: all 0.3s
+        .linea2
+          background: #fff
+          height: 2px
+          width: 15px
+          position: absolute
+          left: 50%
+          margin-left: -7px
+          top: 20px
+          opacity: 1
+          transition: opacity 0.5s
+        .linea3
+          background: #fff
+          height: 2px
+          width: 15px
+          position: absolute
+          left: 50%
+          margin-left: -7px
+          top: 25px
+        .overL1 
+          animation: closetop 1s forwards
+          animation-direction: alternate
+          cursor: pointer
+        .overL2 
+          opacity: 0
+          transition: opacity 0.5s
+          cursor: pointer
+        .overL3 
+          animation: closebottom 1s forwards
+          animation-direction: alternate
+          cursor: pointer
+        @keyframes closetop 
+          0% 
+            transform: translateY(5px) rotate(0deg)
+          25% 
+            transform: translateY(5px) rotate(0deg)
+          75% 
+            transform: translateY(5px) rotate(-45deg)
+          100% 
+            transform: translateY(5px) rotate(-45deg)
+        @keyframes closebottom 
+          0% 
+            transform: translateY(0px) rotate(0deg)
+          25% 
+            transform: translateY(-5px) rotate(0deg)
+          75% 
+            transform: translateY(-5px) rotate(45deg)
+          100% 
+            transform: translateY(-5px) rotate(45deg)
+    .page-nav
+      // background-color: green
+      color: #fff
+      position: relative
+      width: 70%
+      @include respond-to(lg)
+        padding-right: 1%
+      @include respond-to(md)
+        padding-right: 1%
+      @include respond-to(sm)
+        width: 100%
+      @include respond-to(xs)
+        width: 100%
+      // position: relative
+      // visibility: inherit
+      // transition:visibility .4s linear
+      ul
+        align-items: center
+        display: flex
+        justify-content: flex-end
+        height: 100%
+        @include respond-to(sm)
+          flex-wrap: wrap
+          text-align: center
+        @include respond-to(xs)
+          flex-wrap: wrap
+          text-align: center
+        li
+          list-style: none
+          margin: 0
+          padding: 0
+          @include respond-to(sm)
+            // background-color: teal
+            border-bottom: #666 1px solid
+            width: 100%
+            &:first-child
+                border-top: #666 1px solid
+          @include respond-to(xs)
+            // background-color: maroon
+            border-bottom: #666 1px solid
+            width: 100%
+            &:first-child
+                border-top: #666 1px solid
+          a
+            // background-color: blue
+            color: #fff
+            width: 100%
+            height: 100%
+            display: block
+            padding: 0.75em 1em
+            text-decoration: none
+            cursor: pointer
+            // line-height: 2
+            &:hover
+              // background-color: teal
+            @include respond-to(sm)
+              padding: 1.15em 2em
+              &:hover
+                background-color: rgba($white,.2)
+            @include respond-to(xs)
+              padding: 1.15em 2em
+              &:hover
+                background-color: rgba($white,.2)
+            &.active
+              background-color: transparent
 .center-contents-toggle
   height: auto
-  
+  height: 354px
 
-.toggle-nav 
-  // float: right
-  padding: 1em
-  margin: 0 0 1em 1em
-  color: rgb(255,255,255)
-  cursor: pointer
+.center-contents-bg
+  background-color: rgba($black, .8)
+  +transition(all 0.3s ease-in-out)
 
-// .menu-expanded 
-//   height: 11em
+.menu-expanded
+  height: 11em
 
 // /************************
 //   MAIN CONTENTS

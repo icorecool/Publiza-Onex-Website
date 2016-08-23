@@ -13,27 +13,32 @@
   </head>
   <body>
     <header id="top" class="header-second">
-      <nav>
-        <div class="content-wrapper">
-          <div class="logo"><img src="imgs/imagotipo.png" class="imagotipo"><img src="imgs/onex-logo.svg"></div>
-          <div class="navigation-menu-wrapper">
-            <ul class="main-nav">
-              <li><a href="index.html#about" class="smooth-scroll">About Us</a></li>
-              <li><a href="index.html#service">Services</a></li>
-              <li><a href="incentive-travel.html">Incentive Travel</a></li>
-              <li><a href="meetings-events.html">Meetings & Events<span class="menu-btn-bar"></span></a></li>
-              <li><a href="index.html#contact">Contact Us</a></li>
-            </ul>
+      <div class="center-contents">
+        <div class="center-contents-wrap">
+          <div class="page-logo">
+            <div class="logo"><a href="index.html" title="Onex"><img src="imgs/imagotipo.png" class="imagotipo"><img src="imgs/onex-logo.svg"></a></div><span class="toggle-nav">
+              <div class="linea1"></div>
+              <div class="linea2"></div>
+              <div class="linea3">  </div></span>
           </div>
+          <nav class="page-nav collapse">
+            <ul>
+              <li><a href="index.html#about" title="">About Us</a></li>
+              <li><a href="index.html#service" title="">Services</a></li>
+              <li><a href="incentive-travel.html" title="">Incentive Travel</a></li>
+              <li><a href="meetings-events.html" title="">Meetings & Events</a></li>
+              <li><a href="index.html#contact" title="">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
       <div class="content-wrapper hero">
         <div class="hero-content-wrapper">
           <h1>Incentive Travel</h1>
         </div>
       </div>
     </header>
-    <section id="aboutIncentive" class="about-incentive">
+    <section id="aboutIncentive" class="about-incentive section-bg">
       <div class="content-wrapper">
         <div class="side">
           <h2>THE WORLD IS OUR OFFICE. IT CAN BE YOURS TOO.</h2>
@@ -162,5 +167,6 @@
     </footer>
     <script src="js/mailValidator.js"></script>
     <script src="js/_scroll.js"></script>
+    <script src="js/waypoints.min.js"></script>
   </body>
 </html>

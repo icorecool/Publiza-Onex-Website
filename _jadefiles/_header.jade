@@ -1,22 +1,27 @@
 header#top
   .center-contents
-    div
-      a.logo(href="index.html" title="Onex")
-        img.imagotipo(src='imgs/imagotipo.png')
-        img(src='imgs/onex-logo.svg')
-      span.toggle-nav Menu    
-    nav.page-nav.collapse
-      ul
-        li
-          a(href="#about" title="") About Us
-        li
-          a(href="#service" title="") Services
-        li
-          a(href="incentive-travel.html" title="") Incentive Travel
-        li
-          a(href="meetings-events.html" title="") Meetings & Events
-        li
-          a(href="#contact" title="") Contact Us
+    .center-contents-wrap
+      div.page-logo
+        div.logo
+          a(href="index.html" title="Onex")
+            img.imagotipo(src='imgs/imagotipo.png')
+            img(src='imgs/onex-logo.svg')
+        span.toggle-nav
+          .linea1
+          .linea2
+          .linea3   
+      nav.page-nav.collapse
+        ul
+          li
+            a(href="#about" title="") About Us
+          li
+            a(href="#service" title="") Services
+          li
+            a(href="incentive-travel.html" title="") Incentive Travel
+          li
+            a(href="meetings-events.html" title="") Meetings & Events
+          li
+            a(href="#contact" title="") Contact Us
 
   //- nav
   //-   .content-wrapper
@@ -32,11 +37,11 @@ header#top
   //-         li: a(href="meetings-events.html") Meetings & Events
   //-           span.menu-btn-bar
   //-         li: a(href="#contact") Contact Us
-  //- .content-wrapper.hero
-  //-   div.hero-content-wrapper
-  //-     h1 Expertos en los principales destinos de México
-  //-     a.btn.hero-btn(href='#about') Read more
-  //-     a.btn.hero-btn.show-video(href='#') Watch Video
+  .content-wrapper.hero
+    div.hero-content-wrapper
+      h1 Expertos en los principales destinos de México
+      a.btn.hero-btn(href='#about') Read more
+      a.btn.hero-btn.show-video(href='#') Watch Video
   
 .video-modal
   .video-container

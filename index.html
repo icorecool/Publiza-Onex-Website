@@ -14,16 +14,28 @@
   <body>
     <header id="top">
       <div class="center-contents">
-        <div><a href="index.html" title="Onex" class="logo"><img src="imgs/imagotipo.png" class="imagotipo"><img src="imgs/onex-logo.svg"></a><span class="toggle-nav">Menu    </span></div>
-        <nav class="page-nav collapse">
-          <ul>
-            <li><a href="#about" title="">About Us</a></li>
-            <li><a href="#service" title="">Services</a></li>
-            <li><a href="incentive-travel.html" title="">Incentive Travel</a></li>
-            <li><a href="meetings-events.html" title="">Meetings & Events</a></li>
-            <li><a href="#contact" title="">Contact Us</a></li>
-          </ul>
-        </nav>
+        <div class="center-contents-wrap">
+          <div class="page-logo">
+            <div class="logo"><a href="index.html" title="Onex"><img src="imgs/imagotipo.png" class="imagotipo"><img src="imgs/onex-logo.svg"></a></div><span class="toggle-nav">
+              <div class="linea1"></div>
+              <div class="linea2"></div>
+              <div class="linea3">  </div></span>
+          </div>
+          <nav class="page-nav collapse">
+            <ul>
+              <li><a href="#about" title="">About Us</a></li>
+              <li><a href="#service" title="">Services</a></li>
+              <li><a href="incentive-travel.html" title="">Incentive Travel</a></li>
+              <li><a href="meetings-events.html" title="">Meetings & Events</a></li>
+              <li><a href="#contact" title="">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content-wrapper hero">
+        <div class="hero-content-wrapper">
+          <h1>Expertos en los principales destinos de México</h1><a href="#about" class="btn hero-btn">Read more</a><a href="#" class="btn hero-btn show-video">Watch Video</a>
+        </div>
       </div>
     </header>
     <div class="video-modal">
@@ -31,7 +43,7 @@
         <iframe id="player" src="https://www.youtube.com/embed/_8VnSExr9vA" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-    <section id="about" class="aboutus">
+    <section id="about" class="aboutus index-bg">
       <div class="overlay">
         <div class="content-wrapper">
           <div class="left-side">
@@ -303,5 +315,6 @@
     </footer>
     <script src="js/mailValidator.js"></script>
     <script src="js/_scroll.js"></script>
+    <script src="js/waypoints.min.js"></script>
   </body>
 </html>
