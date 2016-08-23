@@ -46,6 +46,9 @@
       column:
         count: 2
         gap: 20px
+      @include respond-to(xs)
+        column:
+         count: 1
       .side-col-6
         background-color: $white
         +border-radius(2px)

@@ -32,15 +32,18 @@
           justify-content: space-around
           align-items: baseline
           width: 100%
+          @include respond-to(xs)
+            flex-wrap: wrap
           .services-col-6
-            // background-color: yellow
             // padding: 1em 2.5%
             width: 35%
             @include respond-to(sm)
-              width: 45%
+              width: 46%
             @include respond-to(xs)
               width: 100%
             ol
+              @include respond-to(xs)
+                margin-bottom: 50px
               li
                 letter-spacing: .5px
                 list-style: none

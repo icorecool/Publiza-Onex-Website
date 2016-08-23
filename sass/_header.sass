@@ -8,65 +8,70 @@ header-second
   background-image: url('../imgs/onex-corporate-travel.jpg')
   background-position: center center
   background-size: cover
-  nav
-    width: 100%
-    position: relative
-    height: 85px
-    //background-color: rgba(0, 0, 0, 0.8)
-    .content-wrapper
-      padding: 0 20px
-      width: 100%
-      height: 100%
-      overflow: hidden
-      position: relative
-      max-width: 1280px
-      margin: 0 auto
-      display: flex
-      align-items: center
-      justify-content: space-between
-      .logo
-        height: 30%
-        img
-          height: 100%
-          width: auto
-        .imagotipo
-          margin-right: 20px
-          transform: scale(1.5)
-
-      .navigation-menu-wrapper
-        height: 100%
-        position: relative
-        display: flex
-        align-items: center
-        text-transform: uppercase
-        font-size: .7em
-        letter-spacing: 1px
-        ul.main-nav
-          display: flex
-          align-items: center
-          justify-content: space-around
-          list-style: none
-          li
-            margin: 0 15px
-            a
-              font-weight: 300
-              display: block
-              position: relative
-              padding: 20px 10px
-              // span
-              //   display: inline-block
-              //   height: 3px
-              //   background-color: $white
-              //   width: 100%
-              //   margin-top: 10px
-              &:hover
-                margin-top: -10px
-                // span
-                //   animation:
-                //     name: slideUp
-                //     duration: 300ms
-                //     delay: 1s
-                //     timing-function: ease-in-out
+  // nav
+  //   width: 100%
+  //   position: relative
+  //   height: 85px
+  //   //background-color: rgba(0, 0, 0, 0.8)
+  //   .content-wrapper
+  //     padding: 0 20px
+  //     width: 100%
+  //     height: 100%
+  //     overflow: hidden
+  //     position: relative
+  //     max-width: 1280px
+  //     margin: 0 auto
+  //     display: flex
+  //     align-items: center
+  //     justify-content: space-between
+  //     .logo
+  //       height: 30%
+  //       @include respond-to(sm)
+  //         height: 27%
+  //       img
+  //         height: 100%
+  //         width: auto
+  //       .imagotipo
+  //         margin-right: 20px
+  //         transform: scale(1.5)d
+  //     .navigation-menu-wrapper
+  //       height: 100%
+  //       position: relative
+  //       display: flex
+  //       align-items: center
+  //       text-transform: uppercase
+  //       font-size: .7em
+  //       letter-spacing: 1px
+  //       @include respond-to(sm)
+  //         display: none
+  //       @include respond-to(xs)
+  //         display: none
+  //       ul.main-nav
+  //         display: flex
+  //         align-items: center
+  //         justify-content: space-around
+  //         list-style: none
+  //         li
+  //           margin: 0 15px
+  //           a
+  //             font-weight: 300
+  //             display: block
+  //             position: relative
+  //             padding: 20px 10px
+  //             // span
+  //             //   display: inline-block
+  //             //   height: 3px
+  //             //   background-color: $white
+  //             //   width: 100%
+  //             //   margin-top: 10px
+  //             &:hover
+  //               margin-top: -10px
+  //               // span
+  //               //   animation:
+  //               //     name: slideUp
+  //               //     duration: 300ms
+  //               //     delay: 1s
+  //               //     timing-function: ease-in-out
 
 
   .hero
@@ -76,8 +81,16 @@ header-second
     justify-content: center
     flex-flow: column
     margin-top: -85px
+    @include respond-to(sm)
+      text-align: center
+    @include respond-to(xs)
+      text-align: center
     .hero-content-wrapper
       max-width: 70%
+      @include respond-to(sm)
+        margin: 0 auto
+      @include respond-to(xs)
+        margin: 0 auto
       h1
         color: rgba($white, 0.9)
         font-size: 3.5em
@@ -87,12 +100,23 @@ header-second
         line-height: 1.4em
         display: block
         margin-bottom: 35px
+        @include respond-to(sm)
+          font-size: 2.8em
+        @include respond-to(xs)
+          font-size: 2em
+        @include respond-to(xx)
+          font-size: 1.6em
       .hero-btn
         display: inline-block
         margin-right: 30px
         font-size: .9em
         text-transform: uppercase
         letter-spacing: 1px
+        &:last-child
+          margin-right: 0
+        @include respond-to(xx)
+          margin-bottom: 20px
+          margin-right: 0
 .header-second
   height: 80vh
   .hero
@@ -148,3 +172,179 @@ header-second
   to
     transform: translateY(0)
     opacity: 1
+
+/**************************************/
+.center-contents
+  // background-color: yellow
+  max-width: 1280px
+  margin: 0 auto
+  overflow: hidden
+  width: 100%
+  display: flex
+  justify-content: space-between
+  height: 60px
+  @include respond-to(sm)
+    flex-wrap: wrap
+  @include respond-to(xs)
+    flex-wrap: wrap
+  div
+    // background-color: red
+    width: 30%
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    @include respond-to(sm)
+      width: 100%
+    @include respond-to(xs)
+      width: 100%
+    .logo,
+    .toggle-nav
+      @include respond-to(sm)
+        width: 80px
+      @include respond-to(xs)
+        width: 80px
+    .logo
+      // background-color: yellow
+      // max-width: 60px
+      @include respond-to(sm)
+        width: calc(100% - 80px)
+      @include respond-to(xs)
+        width: calc(100% - 80px)
+      img
+        display: inline-block
+        height: 45px
+        margin-right: 18px
+    .toggle-nav
+      // background-color: pink
+      @include respond-to(lg)
+        display: none
+      @include respond-to(md)
+        display: none
+      @include respond-to(sm)
+        display: block
+      @include respond-to(xs)
+        display: block
+  .page-nav
+    // background-color: green
+    color: #fff
+    position: relative
+    width: 70%
+    @include respond-to(sm)
+      width: 100%
+    @include respond-to(xs)
+      width: 100%
+    // position: relative
+    // visibility: inherit
+    // transition:visibility .4s linear
+    ul
+      align-items: center
+      display: flex
+      justify-content: flex-end
+      height: 100%
+      @include respond-to(sm)
+        flex-wrap: wrap
+      @include respond-to(xs)
+        flex-wrap: wrap
+      li
+        list-style: none
+        margin: 0
+        padding: 0
+        @include respond-to(sm)
+          // background-color: teal
+          width: 100%
+        @include respond-to(xs)
+          // background-color: maroon
+          width: 100%
+        a
+          // background-color: blue
+          color: #fff
+          width: 100%
+          height: 100%
+          display: block
+          padding: 0.75em 1em
+          text-decoration: none
+          cursor: pointer
+          // line-height: 2
+          &:hover
+            // background-color: teal
+          @include respond-to(sm)
+            border-top: #666 1px solid
+          @include respond-to(xs)
+            border-top: #666 1px solid
+
+.center-contents-toggle
+  height: auto
+  
+
+.toggle-nav 
+  // float: right
+  padding: 1em
+  margin: 0 0 1em 1em
+  color: rgb(255,255,255)
+  cursor: pointer
+
+// .menu-expanded 
+//   height: 11em
+
+// /************************
+//   MAIN CONTENTS
+// ************************/
+.page-contents
+  padding:0 1em
+  max-width: 650px
+  margin:auto
+
+// /************************
+//   MEDIA QUERIES
+// ************************/
+@media only screen and (min-width:450px)
+  header
+    span
+      display: block
+  
+  .page-nav 
+    clear: left
+    position: relative
+    visibility: inherit
+    transition:visibility .4s linear
+  
+
+
+
+@media only screen and (min-width:700px)
+  // header
+  //   height: 4em
+  
+  
+  // .logo
+    // max-width: 92px
+  
+  // .page-nav
+  //   width: auto
+  //   float: right
+  //   display: block
+  //   clear: none
+  //   visibility: visible
+
+  header
+    span
+      display: none
+  
+
+//   .page-nav
+//     ul,
+//     li
+//       float: left
+//     a 
+//       border-top: none
+  
+@media only screen and (max-width:699px)
+  .collapse 
+    visibility: hidden
+  
+
+
+@media only screen and (min-width:700px)
+  .collapse 
+    visibility: inherit
+  

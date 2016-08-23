@@ -33,3 +33,16 @@ $(document).ready(function() {
 
 
 });
+
+
+// DECLARACIÓN DE LA FUNCION
+function toggleNavigation(){
+  $('.page-header').toggleClass('menu-expanded');
+  $('.page-nav').toggleClass('collapse');
+  $('.center-contents').toggleClass('center-contents-toggle')
+}
+
+// EVENTOS DEL DOM
+$(window).on('load',function(){
+  $('.toggle-nav').click(toggleNavigation);
+});

@@ -22,6 +22,12 @@
       .left-side
         width: 70%
         margin-right: 50px
+        @include respond-to(sm)
+          margin: 0 auto
+          width: 80%
+        @include respond-to(xs)
+          margin: 0 auto
+          width: 90%
         h2
           font-weight: 300
           margin: 20px 0
@@ -32,5 +38,7 @@
           text-align: justify
       .right-side
         width: 29%
+        @include respond-to(xs)
+          display: none
         img
           width: 100%
