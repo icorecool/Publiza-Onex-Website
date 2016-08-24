@@ -279,35 +279,35 @@ header-second
           left: 50%
           margin-left: -7px
           top: 25px
-        .overL1 
+        .overL1
           animation: closetop 1s forwards
           animation-direction: alternate
           cursor: pointer
-        .overL2 
+        .overL2
           opacity: 0
           transition: opacity 0.5s
           cursor: pointer
-        .overL3 
+        .overL3
           animation: closebottom 1s forwards
           animation-direction: alternate
           cursor: pointer
-        @keyframes closetop 
-          0% 
+        @keyframes closetop
+          0%
             transform: translateY(5px) rotate(0deg)
-          25% 
+          25%
             transform: translateY(5px) rotate(0deg)
-          75% 
+          75%
             transform: translateY(5px) rotate(-45deg)
-          100% 
+          100%
             transform: translateY(5px) rotate(-45deg)
-        @keyframes closebottom 
-          0% 
+        @keyframes closebottom
+          0%
             transform: translateY(0px) rotate(0deg)
-          25% 
+          25%
             transform: translateY(-5px) rotate(0deg)
-          75% 
+          75%
             transform: translateY(-5px) rotate(45deg)
-          100% 
+          100%
             transform: translateY(-5px) rotate(45deg)
     .page-nav
       // background-color: green
@@ -330,6 +330,7 @@ header-second
         display: flex
         justify-content: flex-end
         height: 100%
+        padding-top: 20px
         @include respond-to(sm)
           flex-wrap: wrap
           text-align: center
@@ -345,13 +346,13 @@ header-second
             border-bottom: #666 1px solid
             width: 100%
             &:first-child
-                border-top: #666 1px solid
+              border-top: #666 1px solid
           @include respond-to(xs)
             // background-color: maroon
             border-bottom: #666 1px solid
             width: 100%
             &:first-child
-                border-top: #666 1px solid
+              border-top: #666 1px solid
           a
             // background-color: blue
             color: #fff
@@ -389,9 +390,9 @@ header-second
 //   MAIN CONTENTS
 // ************************/
 .page-contents
-  padding:0 1em
+  padding: 0 1em
   max-width: 650px
-  margin:auto
+  margin: auto
 
 // /************************
 //   MEDIA QUERIES
@@ -400,24 +401,24 @@ header-second
   header
     span
       display: block
-  
-  .page-nav 
+
+  .page-nav
     clear: left
     position: relative
     visibility: inherit
-    transition:visibility .4s linear
-  
+    transition: visibility .4s linear
+
 
 
 
 @media only screen and (min-width:700px)
   // header
   //   height: 4em
-  
-  
+
+
   // .logo
     // max-width: 92px
-  
+
   // .page-nav
   //   width: auto
   //   float: right
@@ -428,22 +429,21 @@ header-second
   header
     span
       display: none
-  
+
 
 //   .page-nav
 //     ul,
 //     li
 //       float: left
-//     a 
+//     a
 //       border-top: none
-  
+
 @media only screen and (max-width:699px)
-  .collapse 
+  .collapse
     visibility: hidden
-  
+
 
 
 @media only screen and (min-width:700px)
-  .collapse 
+  .collapse
     visibility: inherit
-  

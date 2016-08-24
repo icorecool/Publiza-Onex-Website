@@ -17,6 +17,9 @@
     background-color: rgba($orange, 0.7)
     .content-wrapper
       .side
+        width: 100%
+        max-width: 1024px
+        padding: 0 20px
         h2
           font-weight: 300
           margin: 20px 0
@@ -29,7 +32,7 @@
         .services-col
           // background-color: red
           display: flex
-          justify-content: space-around
+          justify-content: space-between
           align-items: baseline
           width: 100%
           @include respond-to(xs)

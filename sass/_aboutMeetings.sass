@@ -44,11 +44,11 @@
       // flex-wrap: wrap
       // justify-content: center
       column:
-        count: 2
-        gap: 20px
+        count: 1
+        gap: 40px
       @include respond-to(xs)
         column:
-         count: 1
+          count: 1
       .side-col-6
         background-color: $white
         +border-radius(2px)
@@ -58,6 +58,8 @@
         text-align: center
         width: 100%
         overflow: hidden
+        -webkit-column-break-inside: avoid
+        page-break-inside: avoid
         break-inside: avoid
         +transition(all 0.3s ease-in)
         &:hover
