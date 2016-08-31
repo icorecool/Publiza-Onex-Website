@@ -249,11 +249,55 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.html": {
+	"\/imgs\/onex-incentive-travel-services.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120294,
+		"inputAbbreviatedPath": "\/imgs\/onex-incentive-travel-services.png",
+		"outputAbbreviatedPath": "\/imgs\/onex-incentive-travel-services.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/imgs\/onex-incentive-travel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120540,
+		"inputAbbreviatedPath": "\/imgs\/onex-incentive-travel.jpg",
+		"outputAbbreviatedPath": "\/imgs\/onex-incentive-travel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/imgs\/onex-meeting-services.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79362,
+		"inputAbbreviatedPath": "\/imgs\/onex-meeting-services.png",
+		"outputAbbreviatedPath": "\/imgs\/onex-meeting-services.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/imgs\/onex-meetings-and-events.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 139118,
+		"inputAbbreviatedPath": "\/imgs\/onex-meetings-and-events.jpg",
+		"outputAbbreviatedPath": "\/imgs\/onex-meetings-and-events.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/incentive-travel.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
+		"inputAbbreviatedPath": "\/incentive-travel.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -355,6 +399,22 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/sass\/_font-icons.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_font-icons.scss",
+		"outputAbbreviatedPath": "\/css\/_font-icons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/_fonts.sass": {
 		"createSourceMap": 0,
@@ -1717,7 +1777,7 @@
 		"useLibsass": 0
 		},
 	"\/sass\/style.sass": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
@@ -1728,8 +1788,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": false
 		},
 	"\/suscribeLanding.html": {
